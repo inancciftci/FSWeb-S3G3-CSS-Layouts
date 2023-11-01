@@ -1,0 +1,84 @@
+.projects .flex {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  background: url(https://picsum.photos/1500?grayscale);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.overlay form {
+  width: 50%;
+  color: white;
+  background: rgb(81, 80, 80);
+  padding: 5rem;
+  font-size: 1.6rem;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+
+form input {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 100%;
+}
+form textarea {
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  height: 5rem;
+}
+
+#form-btn {
+  display: block;
+  align-self: flex-end;
+}
+
+main {
+  position: relative;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .overlay form {
+    width: 75%;
+  }
+  .flex-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .flex-column {
+    text-align: center;
+  }
+
+  .flex-column a {
+    order: -1;
+  }
+}
