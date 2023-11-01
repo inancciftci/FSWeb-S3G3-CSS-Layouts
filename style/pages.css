@@ -11,6 +11,10 @@
   gap: 5rem;
 }
 
+.flex-row img {
+  width: 100%;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
