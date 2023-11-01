@@ -1,1 +1,163 @@
-/* CSS stillerinizi buraya girin */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DotGothic16", sans-serif;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+img {
+  border-radius: 0.3rem;
+}
+
+a {
+  border-radius: 0.3rem;
+}
+
+.container {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  flex-direction: column;
+  gap: 3rem;
+  align-content: space-around;
+}
+
+.header .logo h1 {
+  font-size: 3.6rem;
+}
+
+.header nav {
+  margin-bottom: 1rem;
+  column-gap: 2rem;
+}
+
+.footer a,
+.text-box a,
+.header nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+  padding: 1rem;
+  border: 1px solid white;
+  background-color: black;
+  transition: 0.3s background ease-in-out;
+}
+
+.text-box a:hover,
+.header nav a:hover {
+  color: black;
+  border: 1px solid black;
+  background: white;
+}
+
+.info {
+  gap: 2rem;
+}
+
+.info h2 {
+  font-size: 2.4rem;
+}
+
+.img-box {
+  width: 50%;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+.text-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-box p {
+  text-align: center;
+}
+
+.img-row {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.img-row:nth-of-type(2) {
+  margin-top: 2rem;
+}
+
+.img-row .img {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-row p {
+  margin-top: 1rem;
+  padding: 1rem;
+  letter-spacing: 0.3rem;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.img-row p:hover {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+
+.img-row p:hover::before {
+  content: "↝";
+}
+
+.img-row img {
+  width: 100%;
+}
+
+footer {
+  height: 15rem;
+  background-color: beige;
+}
+
+.footer {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer a:hover {
+  background: none;
+  color: black;
+  border: 1px solid black;
+}
