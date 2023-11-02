@@ -3,13 +3,12 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  width: 100%;
 }
 
 .page-title {
   text-align: center;
   margin-bottom: 1rem;
-  margin-top: -2rem;
+  margin-top: 1rem;
 }
 
 .flex-row {
@@ -33,6 +32,7 @@
 
 .img-content {
   width: 50%;
+  height: 100%;
 }
 
 .text-content {
@@ -81,11 +81,6 @@ form textarea {
 
 #form-btn:hover {
   background-color: wheat;
-}
-
-main {
-  position: relative;
-  min-height: 100%;
 }
 
 @media screen and (max-width: 960px) {
