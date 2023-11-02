@@ -49,13 +49,21 @@ header {
   align-content: space-around;
 }
 
-.header .logo h1 {
+.header .logo .logo-text {
   font-size: 3.6rem;
 }
 
 .header nav {
   margin-bottom: 1rem;
   column-gap: 2rem;
+}
+
+.header-cat {
+  width: 5rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 10%;
+  margin: 1rem;
 }
 
 .primary-btn {
@@ -77,6 +85,8 @@ header {
 
 .info {
   gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .info h2 {
@@ -85,6 +95,11 @@ header {
 
 .img-box {
   width: 50%;
+  height: 40vh;
+  background: url("https://picsum.photos/600/500?grayscale");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .img-box img {
@@ -164,26 +179,35 @@ footer {
   border: 1px solid black;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 960px) {
   .header {
     justify-content: center;
     align-items: center;
   }
   .header nav {
     margin-bottom: 1rem;
-    column-gap: 0.3rem;
+  }
+  .header nav a {
+    border: none;
+    margin: 0;
+    padding: 0.3rem;
+  }
+
+  .header-cat {
+    right: 2.5%;
   }
 
   .container {
     width: 95%;
   }
 
-  .img-box {
-    width: 100%;
+  .info {
+    justify-content: center;
+    align-items: center;
   }
 
-  .img-box img {
-    object-fit: contain;
+  .img-box {
+    width: 100%;
   }
 
   .text-box {
@@ -195,14 +219,26 @@ footer {
   }
 
   .img-row .img {
-    width: 45%;
+    width: 49%;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 0;
     margin-bottom: 2rem;
   }
 
   .img-row:nth-of-type(2) {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img-row p {
+    font-size: 1.4rem;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .img-row .img {
+    margin-bottom: 3rem;
   }
 }
