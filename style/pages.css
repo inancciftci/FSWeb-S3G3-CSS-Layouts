@@ -3,12 +3,18 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  width: 100%;
+}
+
+.projects {
+  width: 100%;
 }
 
 .flex-row {
   display: flex;
   flex-direction: row;
   gap: 5rem;
+  width: 100%;
 }
 
 .flex-row img {
@@ -21,6 +27,14 @@
   gap: 3rem;
   justify-content: center;
   align-items: center;
+}
+
+.img-content {
+  width: 50%;
+}
+
+.text-content {
+  width: 50%;
 }
 
 .form {
@@ -84,5 +98,13 @@ main {
 
   .flex-column a {
     order: -1;
+  }
+
+  .img-content {
+    width: 100%;
+  }
+
+  .text-content {
+    width: 100%;
   }
 }
